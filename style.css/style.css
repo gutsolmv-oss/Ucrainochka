@@ -129,3 +129,177 @@ body {
 .btn-secondary:hover {
     background-color: #e0e0e0;
 }
+/* Секция Про нас */
+.about-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+/* Секція Переваг */
+.advantages-section {
+    padding: 50px 20px;
+    background-color: #f4f6f8;
+    text-align: center; /* Центрує заголовок */
+}
+
+.advantages-container {
+    max-width: 1000px;
+    margin: 0 auto; /* Центрує весь блок по горизонталі */
+}
+
+/* Сітка з картками */
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center; /* Центрує картки в сітці */
+}
+
+/* Картка переваги */
+.advantage-card {
+    background-color: #ffffff;
+    padding: 25px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* Додано для центрування вмісту картки */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.advantage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.advantage-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+    text-align: center;
+}
+/* Універсальна анімація випливання */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Застосовуємо абсолютно до всіх блоків та елементів сайту */
+header,
+section,
+footer,
+.hero-container,
+.advantage-card,
+.business-card,
+.btn {
+    animation: fadeInUp linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 25%;
+}
+/* 5-та секція: Бізнес-ідея */
+.business-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.business-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Сітка з 4 карток */
+.business-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.business-card {
+    background-color: #f9f9f9;
+    padding: 25px 20px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.business-card:hover {
+    transform: translateY(-4px);
+}
+
+.card-title {
+    font-size: 18px;
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #4a5568;
+}
+/* Підвал сайту */
+.site-footer {
+    background-color: #1a252f; /* Трохи темніший фон для кращого контрасту */
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-text {
+    font-size: 15px;
+    color: #ffffff; /* Яскраво-білий колір тексту */
+    font-weight: 500;
+    margin: 0;
+}
+
+.footer-link {
+    color: #4da3ff; /* Яскравий блакитний для посилання */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.footer-link:hover {
+    color: #80c0ff;
+    text-decoration: underline;
+}
