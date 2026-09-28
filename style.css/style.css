@@ -79,3 +79,53 @@ body {
     color: #ffffff;
     background-color: #1a73e8;
 }
+.hero-section{
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+.hero-container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.hero-title{
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+.hero-subtitle{
+    font-size: 20px;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.btn{
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+.btn-primary{
+    background-color: #1a73e8;
+    color: #ffffff;
+}
+.btn-primary:hover{
+    background-color: #1557b0;
+}
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.btn-secondary:hover {
+    background-color: #e0e0e0;
+}
