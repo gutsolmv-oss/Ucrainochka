@@ -200,17 +200,6 @@ body {
     margin: 0;
     text-align: center;
 }
-/* Універсальна анімація випливання */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 /* Застосовуємо абсолютно до всіх блоків та елементів сайту */
 header,
